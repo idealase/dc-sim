@@ -9,45 +9,45 @@ export const ARCHETYPES: Record<DataCenterArchetype, ArchetypeSpec> = {
     name: 'Hyperscale',
     computeCapacity: 1000,
     coolingCapacityMW: 120,
-    buildTimeWeeks: 24,
-    gridConnectWeeks: 16,
-    baseCost: 500,
+    buildTimeWeeks: 16, // Reduced from 24
+    gridConnectWeeks: 8, // Reduced from 16
+    baseCost: 450, // Slightly cheaper
     powerPerComputeUnit: 0.1, // 100 kW per compute unit
     pue: 1.2,
-    minPermittingWeeks: 12,
+    minPermittingWeeks: 8, // Reduced from 12
   },
   modular: {
     name: 'Modular',
     computeCapacity: 200,
     coolingCapacityMW: 30,
-    buildTimeWeeks: 8,
-    gridConnectWeeks: 4,
-    baseCost: 120,
+    buildTimeWeeks: 4, // Reduced from 8
+    gridConnectWeeks: 2, // Reduced from 4
+    baseCost: 100, // Cheaper
     powerPerComputeUnit: 0.12,
     pue: 1.4,
-    minPermittingWeeks: 4,
+    minPermittingWeeks: 2, // Reduced from 4
   },
   retrofit: {
     name: 'Retrofit',
     computeCapacity: 300,
     coolingCapacityMW: 40,
-    buildTimeWeeks: 12,
-    gridConnectWeeks: 6,
-    baseCost: 80,
+    buildTimeWeeks: 6, // Reduced from 12
+    gridConnectWeeks: 3, // Reduced from 6
+    baseCost: 70, // Cheaper
     powerPerComputeUnit: 0.15,
     pue: 1.6,
-    minPermittingWeeks: 2,
+    minPermittingWeeks: 1, // Reduced from 2
   },
   edge: {
     name: 'Edge',
     computeCapacity: 50,
     coolingCapacityMW: 8,
-    buildTimeWeeks: 4,
-    gridConnectWeeks: 2,
-    baseCost: 50,
+    buildTimeWeeks: 2, // Reduced from 4
+    gridConnectWeeks: 1, // Reduced from 2
+    baseCost: 40, // Cheaper
     powerPerComputeUnit: 0.18,
     pue: 1.5,
-    minPermittingWeeks: 1,
+    minPermittingWeeks: 0, // Instant permitting
   },
 };
 

@@ -9,22 +9,22 @@ import { generateSeed } from './rng';
 // Configuration constants
 export const CONFIG = {
   // Demand
-  initialDemand: 100,
-  demandGrowthRate: 0.03, // 3% per week base growth
-  demandShockMultiplier: 1.5,
+  initialDemand: 50, // Lower starting demand
+  demandGrowthRate: 0.01, // 1% per week (was 3% - much more manageable)
+  demandShockMultiplier: 1.3, // Smaller demand spikes
   
   // Failure thresholds
-  backlogFailureThreshold: 500,
-  backlogGraceTicks: 4,
+  backlogFailureThreshold: 800, // More forgiving (was 500)
+  backlogGraceTicks: 12, // 12 weeks grace period (was 4)
   gridReserveWarningMW: 20,
   gridReserveFailureMW: -10,
   thermalStressFailure: 0.95,
-  carbonCapBudget: 50000, // Total CO2 budget in tonnes
-  acceptanceFailureThreshold: 20,
+  carbonCapBudget: 80000, // More CO2 budget (was 50000)
+  acceptanceFailureThreshold: 15, // Slightly harder to fail via acceptance
   
   // Budget
-  initialBudget: 300,
-  weeklyBudgetIncome: 10,
+  initialBudget: 500, // More starting money (was 300)
+  weeklyBudgetIncome: 15, // More income (was 10)
   
   // Physics
   maxThermalStress: 1.0,
