@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="10" y="30" width="80" height="50" rx="5" fill="url(#grad)" />
+  <rect x="15" y="35" width="10" height="10" rx="2" fill="#22c55e" opacity="0.8"/>
+  <rect x="30" y="35" width="10" height="10" rx="2" fill="#22c55e" opacity="0.8"/>
+  <rect x="45" y="35" width="10" height="10" rx="2" fill="#eab308" opacity="0.8"/>
+  <rect x="60" y="35" width="10" height="10" rx="2" fill="#22c55e" opacity="0.8"/>
+  <rect x="75" y="35" width="10" height="10" rx="2" fill="#ef4444" opacity="0.8"/>
+  <rect x="15" y="50" width="10" height="10" rx="2" fill="#22c55e" opacity="0.8"/>
+  <rect x="30" y="50" width="10" height="10" rx="2" fill="#22c55e" opacity="0.8"/>
+  <rect x="45" y="50" width="10" height="10" rx="2" fill="#22c55e" opacity="0.8"/>
+  <rect x="60" y="50" width="10" height="10" rx="2" fill="#eab308" opacity="0.8"/>
+  <rect x="75" y="50" width="10" height="10" rx="2" fill="#22c55e" opacity="0.8"/>
+  <rect x="15" y="65" width="70" height="5" rx="2" fill="#1e1b4b" opacity="0.5"/>
+  <circle cx="50" cy="15" r="10" fill="#fbbf24"/>
+  <path d="M50 8 L52 13 L57 13 L53 17 L55 22 L50 19 L45 22 L47 17 L43 13 L48 13 Z" fill="#fef3c7"/>
+</svg>
