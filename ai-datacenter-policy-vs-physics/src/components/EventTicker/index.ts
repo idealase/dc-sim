@@ -1,0 +1,1 @@
+export { EventTicker } from './EventTicker';
